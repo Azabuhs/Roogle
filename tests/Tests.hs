@@ -1,4 +1,7 @@
 import Roogle
+import Roogle.Types
+import Roogle.Scope
+import Roogle.Document
 import Test.HUnit
 
 mockTypesignature :: String

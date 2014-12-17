@@ -16,7 +16,10 @@ build-type:          Simple
 cabal-version:       >=1.10
 
 library
-  exposed-modules:     Roogle
+  exposed-modules:     Roogle,
+                       Roogle.Types,
+                       Roogle.Scope,
+                       Roogle.Document
   -- other-modules:       
   -- other-extensions:    
   build-depends:       base >=4.7 && <4.8,
