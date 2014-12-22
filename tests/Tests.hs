@@ -1,6 +1,10 @@
+module Main where
+
 import Roogle
 import Roogle.Types
 import Roogle.Scope
+import Test.Framework (defaultMain)
+import Test.Framework.Providers.HUnit
 import Test.HUnit
 
 mockTypesignature :: String
@@ -20,6 +24,6 @@ tests = [
         "make Scope from code" ~: walk mockCode ~=? mockScope
         ]
 
-main :: IO Counts
+main :: IO ()
 main = do
-    runTestTT $ TestList tests
+     defaultMain $ hUnitTestToTests $ TestList tests
